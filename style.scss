@@ -28,23 +28,31 @@ body {
   }
 
   .line {
-    background: $background;
-    border: 1px solid transparent;
-    border-radius: 40px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-decoration: none; 
   }
 
-  .line:hover {
-    border-image: linear-gradient(90deg, #964cf0, #170033) 1;
+  .line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px; 
+    background: linear-gradient(90deg, #964CF0, #170033); /* Cor da barra */
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+  }
+
+  .line:hover::after {
+    transform: scaleX(1); /* Exibe a barra ao passar o mouse */
   }
 }
 
 .home {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 148px;
 
   h2 {
     font-size: 32px;
@@ -95,12 +103,11 @@ body {
     rgb(57.91, 22.71, 100.94) 100%
   );
 
-  .download-text{
+  .download-text {
     font-weight: 600;
     color: #ffffff;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
-
   }
 }
