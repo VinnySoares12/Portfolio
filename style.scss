@@ -120,9 +120,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right, #AA65FF, #170033) 1;
-  border-radius: 10px;
+
+  padding: 5px;
+  border: 3px solid #170033;
+  border-radius: 50px;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
@@ -130,7 +131,6 @@ body {
 
   background: #000;
 
-  
   h1 {
     text-transform: uppercase;
     font-size: 48px;
