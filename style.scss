@@ -30,7 +30,7 @@ body {
   .line {
     position: relative;
     display: inline-block;
-    text-decoration: none; 
+    text-decoration: none;
   }
 
   .line::after {
@@ -39,10 +39,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 3px; 
-    background: linear-gradient(90deg, #964CF0, #170033); /* Cor da barra */
-    transform: scaleX(0); 
-    transition: transform 0.3s ease; 
+    height: 3px;
+    background: linear-gradient(90deg, #964cf0, #170033); /* Cor da barra */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
 
   .line:hover::after {
@@ -85,29 +85,67 @@ body {
   }
 }
 
-.download-button {
-  display: inline-flex;
+.btn-curriculo {
+  color: $text-color;
+  text-decoration: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  background: #964cf0;
+  font-weight: 600;
+
+  margin: 48px auto;
+
+  border-radius: 150px;
+  width: 15%;
   padding: 14px 32px;
-  margin-top: 48px;
-  text-decoration: none;
-  position: relative;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 60px;
-  overflow: hidden;
   background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(149.88, 76.04, 240.12) 0%,
-    rgb(57.91, 22.71, 100.94) 100%
+    48.85% 48.86% at 50% 50%,
+    #964cf0 0%,
+    #3a1765 100%
   );
 
-  .download-text {
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+  .btn-text {
+    transition: 0.3s;
+  }
+  .btn-text:hover {
+    color: #170033;
+  }
+}
+
+// about
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, #AA65FF, #170033) 1;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 64px;
+
+  background: #000;
+
+  
+  h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  p,
+  span {
+    line-height: 160%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  span {
+    color: #aa65ff;
   }
 }
