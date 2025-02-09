@@ -40,7 +40,7 @@ body {
     right: 0;
     bottom: 0;
     height: 3px;
-    background: linear-gradient(90deg, #964cf0, #170033); /* Cor da barra */
+    background: linear-gradient(90deg, #964cf0, #170033);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -115,23 +115,21 @@ body {
 
 // about
 
-
-
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-
   padding: 5px;
-  border: 3px solid #170033;
   border-radius: 40px;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 72px 64px;
-
+  position: relative;
   background: #000;
+
+  margin-bottom: 150px;
 
   h1 {
     text-transform: uppercase;
@@ -150,4 +148,17 @@ body {
   span {
     color: #aa65ff;
   }
+}
+
+.about::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: 40px;
 }
