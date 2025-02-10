@@ -10,6 +10,7 @@ body {
   background: #0B0B0C;
   color: white;
   font-family: "plus jakarta sans", sans-serif;
+  scroll-behavior: smooth; /* Habilita a rolagem suave */
 }
 
 .btn-nav {
@@ -104,7 +105,7 @@ body {
   border-radius: 40px;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 72px 64px;
   position: relative;
   background: #000;
@@ -137,4 +138,312 @@ body {
   z-index: -1;
   margin: -2px;
   border-radius: 40px;
+}
+
+.projects-title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 80px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-rows: repeat(2, auto); /* 2 linhas */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.project-card1 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card1 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card1 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card1 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card1 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card1::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
+}
+
+.project-card2 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card2 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card2 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card2 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card2 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card2::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
+}
+
+.project-card3 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card3 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card3 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card3 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card3 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card3::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
+}
+
+.project-card4 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card4 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card4 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card4 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card4 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card4::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
+}
+
+.project-card5 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card5 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card5 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card5 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card5 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card5::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
+}
+
+.project-card6 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  color: #fff;
+  position: relative;
+}
+.project-card6 .project-image {
+  border-radius: 8px;
+  background-color: #863cdf;
+  display: flex;
+  min-height: 156px;
+  width: 100%;
+  margin: 0;
+}
+.project-card6 .project-content {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px;
+}
+.project-card6 .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.project-card6 .project-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 0 0 0;
+}
+
+.project-card6::before {
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: 12px;
 }/*# sourceMappingURL=style.css.map */

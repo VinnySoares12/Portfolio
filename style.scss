@@ -8,10 +8,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "partials/colors";
 
+// html{
+//   scroll-behavior: smooth; /* Habilita a rolagem suave */
+// }
+
+
 body {
   background: $background;
   color: $text-color;
   font-family: "plus jakarta sans", sans-serif;
+  scroll-behavior: smooth; /* Habilita a rolagem suave */
 }
 
 .btn-nav {
@@ -124,7 +130,7 @@ body {
   border-radius: 40px;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 72px 64px;
   position: relative;
   background: #000;
@@ -161,4 +167,344 @@ body {
   z-index: -1;
   margin: -2px;
   border-radius: 40px;
+}
+
+// skills
+
+
+
+
+// cards
+
+.projects-title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 80px 0;
+}
+.cards {
+  display: grid;
+  // grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-rows: repeat(2, auto); /* 2 linhas */
+  gap: 15px;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.project-card1 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card1::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
+}
+
+.project-card2 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card2::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
+}
+
+.project-card3 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card3::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
+}
+
+.project-card4 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card4::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
+}
+
+.project-card5 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card5::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
+}
+
+.project-card6 {
+  border-radius: 12px;
+  background-color: #000;
+  max-width: 384px;
+  padding: 24px 16px;
+  // overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .project-image {
+    border-radius: 8px;
+    background-color: #863cdf;
+    display: flex;
+    min-height: 156px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-content {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .project-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 16px;
+    margin: 16px 0 0 0;
+  }
+}
+.project-card6::before{
+  content: "";
+  background: linear-gradient(to bottom, #964cf0, #170033);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin:  -1px;
+  border-radius: 12px;
 }
